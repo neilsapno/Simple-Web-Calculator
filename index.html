@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator ILS</title>
+</head>
+
+<body>
+    <div class="blurred_bg">
+        <div class="Calculator">
+            <h1>Calculator</h1>
+            <div class="input">
+                <p id="fNum"></p>
+                <input type="text" id="inputHolder" value="0">
+                <p id="operatorText">Last operator used: None</p>
+            </div>
+            <div class="firstrow">
+                <button id="btnclear" onclick="onclearClick()"><span>C</span></button>
+                <button id="btnmodulo" onclick="onmoduloClick()"><span>%</span></button>
+                <button id="btnerase" onclick="oneraseClick()"><span>⌫</span></button>
+                <button id="btnmultiply" onclick="onmultiplyClick()"><span>x</span></button>
+            </div>
+            <div class="secondrow">
+                <button id="btn7" onclick="on7Click()"><span>7</span></button>
+                <button id="btn8" onclick="on8Click()"><span>8</span></button>
+                <button id="btn9" onclick="on9Click()"><span>9</span></button>
+                <button id="btndiv" onclick="ondivideClick()"><span>÷</span></button>
+            </div>
+            <div class="thirdrow">
+                <button id="btn4" onclick="on4Click()"><span>4</span></button>
+                <button id="btn5" onclick="on5Click()"><span>5</span></button>
+                <button id="btn6" onclick="on6Click()"><span>6</span></button>
+                <button id="btnminus" onclick="onminusClick()"><span>-</span></button>
+            </div>
+            <div class="fourthrow">
+                <button id="btn1" onclick="on1Click()"><span>1</span></button>
+                <button id="btn2" onclick="on2Click()"><span>2</span></button>
+                <button id="btn3" onclick="on3Click()"><span>3</span></button>
+                <button id="btnplus" onclick="onaddClick()"><span>+</span></button>
+            </div>
+            <div class="fifthrow">
+                <button id="btnneg" onclick="onnegClick()"><span>+ / -</span></button>
+                <button id="btn0" onclick="on0Click()"><span>0</span></button>
+                <button id="btndot" onclick="ondotClick()"><span>•</span></button>
+                
+                <button id="btnequal" onclick="onequalClick()"><span>=</span></button>
+            </div>
+        </div>
+            <div class="footer">
+                <p>ⓒ 2022 Neil Cedric C. Sapno</p>
+                <p>Photo by <a
+                        href="https://unsplash.com/@brunovdkraan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bruno
+                        van der Kraan</a> on <a
+                        href="https://unsplash.com/backgrounds/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

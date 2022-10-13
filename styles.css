@@ -1,0 +1,89 @@
+* {
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+
+body {
+	background-image: url(img/bg.png);
+}
+
+.Calculator {
+	z-index: 2;
+	display: block;
+	border: none;
+	border-radius: 11px;
+	border-width: 5px;
+	border-color: #172126;
+	background-color: #364c59;
+	width: 460px;
+	height: 620px;
+	margin: auto;
+	margin-top: 50px;
+	padding-top: 5px;
+    padding-bottom: 5px;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.input {
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	width: 85%;
+	height: 85px;
+	box-shadow: 1px 1px 10px #6c7d8c;
+}
+
+.input #fNum {
+	margin: 0px;
+	text-align: left;
+	height: 15pt;
+	margin-left: 2px;
+	color: #e0e1e4;
+	font-style: italic;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.input input {
+	width: 80%;
+	font-size: 28pt;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	margin-top: 0px;
+	background-color: #364c59;
+	border: none;
+}
+
+.input #operatorText {
+	font-size: 10pt;
+	margin-top: 3px;
+	margin-left: 3px;
+	text-align: left;
+}
+
+.Calculator button {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 14pt;
+	width: 75px;
+	height: 75px;
+	background-color: #364c59;
+	border: none;
+	border-radius: 20px;
+	box-shadow: -3px -2px 10px #6c7d8c;
+	margin: 5px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.Calculator button:hover {
+	background-color: #6c7d8c;
+	transition: all 0.3s;
+	box-shadow: rgba(4, 88, 140, 0.4) -5px 5px, rgba(4, 88, 140, 0.3) -10px 10px,
+		rgba(4, 88, 140, 0.2) -15px 15px, rgba(4, 88, 140, 0.1) -20px 20px,
+		rgba(4, 88, 140, 0.05) -25px 25px;
+}
+
+.footer {
+	margin-top: 50px;
+}
