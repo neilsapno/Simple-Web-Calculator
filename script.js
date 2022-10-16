@@ -1,4 +1,5 @@
 var currentInput = "0";
+var total;
 var input = document.getElementById("inputHolder").value;
 var operation = "None";
 var firstNum, secondNum;
@@ -7,7 +8,13 @@ var firstNum, secondNum;
 function on1Click() {
 	if (currentInput == "0") {
 		currentInput = "1";
-	} else {
+	} else if (total != null) {
+		currentInput = "1";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
+	}
+	else {
 		currentInput += "1";
 	}
 	document.getElementById("inputHolder").value = currentInput;
@@ -15,6 +22,11 @@ function on1Click() {
 function on2Click() {
 	if (currentInput == "0") {
 		currentInput = "2";
+	} else if (total != null) {
+		currentInput = "2";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
 	} else {
 		currentInput += "2";
 	}
@@ -23,6 +35,11 @@ function on2Click() {
 function on3Click() {
 	if (currentInput == "0") {
 		currentInput = "3";
+	} else if (total != null) {
+		currentInput = "3";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
 	} else {
 		currentInput += "3";
 	}
@@ -31,6 +48,11 @@ function on3Click() {
 function on4Click() {
 	if (currentInput == "0") {
 		currentInput = "4";
+	} else if (total != null) {
+		currentInput = "4";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
 	} else {
 		currentInput += "4";
 	}
@@ -39,6 +61,11 @@ function on4Click() {
 function on5Click() {
 	if (currentInput == "0") {
 		currentInput = "5";
+	} else if (total != null) {
+		currentInput = "5";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
 	} else {
 		currentInput += "5";
 	}
@@ -47,6 +74,11 @@ function on5Click() {
 function on6Click() {
 	if (currentInput == "0") {
 		currentInput = "6";
+	} else if (total != null) {
+		currentInput = "6";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
 	} else {
 		currentInput += "6";
 	}
@@ -55,6 +87,11 @@ function on6Click() {
 function on7Click() {
 	if (currentInput == "0") {
 		currentInput = "7";
+	} else if (total != null) {
+		currentInput = "7";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
 	} else {
 		currentInput += "7";
 	}
@@ -63,6 +100,11 @@ function on7Click() {
 function on8Click() {
 	if (currentInput == "0") {
 		currentInput = "8";
+	} else if (total != null) {
+		currentInput = "8";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
 	} else {
 		currentInput += "8";
 	}
@@ -71,6 +113,11 @@ function on8Click() {
 function on9Click() {
 	if (currentInput == "0") {
 		currentInput = "9";
+	} else if (total != null) {
+		currentInput = "9";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
 	} else {
 		currentInput += "9";
 	}
@@ -79,6 +126,11 @@ function on9Click() {
 function on0Click() {
 	if (currentInput == "0") {
 		currentInput = "0";
+	} else if (total != null) {
+		currentInput = "0";
+		operation = "None";
+		document.getElementById("operatorText").innerHTML =
+			"Last operator used: " + operation;
 	} else {
 		currentInput += "0";
 		document.getElementById("inputHolder").value = currentInput;
@@ -215,8 +267,9 @@ function onequalClick() {
 	} else {
 		document.getElementById("fNum").innerHTML = "";
 		secondNum = parseFloat(currentInput);
-		currentInput = checkOperation(operation, firstNum, secondNum);
-		document.getElementById("inputHolder").value = currentInput;
+		total = checkOperation(operation, firstNum, secondNum);
+		currentInput = total;
+		document.getElementById("inputHolder").value = total;
 		firstNum = null;
 		secondNum = null;
 	}

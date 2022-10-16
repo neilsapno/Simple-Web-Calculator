@@ -47,6 +47,7 @@ body {
 
 .input input {
 	width: 80%;
+	height: 45px;
 	font-size: 28pt;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
